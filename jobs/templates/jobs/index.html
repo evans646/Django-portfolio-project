@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
   </head>
 
   <body>
@@ -46,9 +47,11 @@
           <img src="{% static 'mypic.jpeg' %}" height="300" />
         </div>
       </section>
-  <button type="button" class="btn btn-info btn-md">Download my resume</button>
+  <button type="button" class="btn btn-info btn-md py-3">Resume</button>
+
+  
       <div class="album py-3  bg-light">
-   <h1 class="text-center projects mb-5 text-muted" >My Projects</h1>
+   <h1 class="text-center projects mb-5 text-muted" style="text-decoration: overline;text-decoration-color:aquamarine" >My Projects</h1>
         <div class="container">
           <div class="row">
             {% for job in jobs.all %}
@@ -68,40 +71,28 @@
       </div>
 
       <section class="stacks">
-        <div class="album py-3  bg-dark">
-          <h1 class="text-center mb-3 text-white" >Web Technology Stacks</h1>
+        <div class="album py-3  bg-dark p-10" >
+          <h1 class="text-center mb-5 text-white" >Web Technology Stacks</h1>
           <div class="container">
-              <span  class="icons8-javascript">
-                <img src="https://img.icons8.com/color/50/000000/javascript--v1.png"/>
-              </span>
-              <span class="jquery">
-                <img src="data:image/png;base64,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">
-              </span>
-              <span class="npm">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
- width="35" height="35"
-viewBox="0 0 172 172"
-style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#e73c3c"><path d="M0,53.75v59.125h48.375v10.75h37.625v-10.75h86v-59.125zM9.55322,63.30322h38.22339h0.0105v41.21533h-9.56372v-31.65161h-9.55322v31.65161h-19.11694zM57.34033,63.30322h38.21289h0.0105v41.20483h-19.11695v9.56372h-19.10644zM105.11695,63.30322h57.32983h0.0105v41.21533h-9.56372v-31.65161h-9.55322v31.65161h-9.55322v-31.65161h-9.56372v31.65161h-19.10644zM76.44678,72.86695v22.09839h9.55322v-22.09839z"></path></g></g></svg>
-              </span>
-              <span class="react">
-                <img src="https://img.icons8.com/color/48/000000/react-native.png"/>
-              </span>
-              <span class="html">
-                <img src="https://img.icons8.com/color/48/000000/html-5.png"/>
-              </span>
-              <span class="css">
-                <img src="https://img.icons8.com/color/48/000000/css3.png"/>
-              </span>
-              <h1 class="text-center mb-2 text-white" >Databases</h1>
-              <span class="myql">
-                <img src="https://img.icons8.com/color/48/000000/mysql-logo.png"/>
-              </span>
-              <span class="mongodb">
-                <img src="https://img.icons8.com/color/48/000000/mongodb.png"/>
-              </span>
-              <span class="postgres">
-                <img src="https://img.icons8.com/color/48/000000/postgreesql.png"/>
-              </span>
+            <div class="icons8-html-5  title="html"></div>
+            <div class="icons8-css3" title="css3"></div>
+            <div class="icons8-bootstrap" title="bootstrap"></div>
+            <div class="icons8-svelte"></div>
+            <div class="icons8-javascript"></div>
+            <div class="icons8-react-native"></div>
+            <div class="icons8-redux"></div>
+            <div class="icons8-jquery"></div>
+            <div class="icons8-npm"></div>
+            <div class="icons8-python"></div>
+             <div class="icons8-django"></div>
+              <div class="icons8-github"></div>
+              <div class="icons8-git"></div>
+              <div class="icons8-node-js"></div>
+              <div class="icons8-heroku"></div>
+              <div class="icons8-amazon-web-services"></div>
+              <div class="icons8-mongodb"></div>
+              <div class="icons8-mysql-logo"></div>
+              <div class="icons8-postgresql"></div>
                  </div>
                </div>
              </div>
