@@ -1,0 +1,22 @@
+a{
+    text-decoration: none !important;
+}
+
+a .fa-envelope{
+    color: rgb(46, 141, 178) !important;
+    font-size: 2.5em;
+}
+
+a .fa-github{
+    color: #171515 ;
+    font-size: 2.5em;
+}
+a .fa-linkedin{
+ color: #0e76a8;
+ font-size: 2.5em;
+}
+
+a .fa-codepen{
+    color: #171515 ;
+    font-size: 2.5em;
+};
