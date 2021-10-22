@@ -48,7 +48,7 @@
             {% for job in jobs.all %}
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <a href="https://portfolio656.herokuapp.com/{%url 'detail' job.id %}">
+                <a href="{%url 'detail' job.id %}">
                 <img class="card-img-top img-fluid" src="{{ job.image.url }}" width="400" height="200" >
                 <div class="card-body">
                   <p class="card-text text-decoration-none">{{ job.summary }}</p>
