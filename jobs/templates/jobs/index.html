@@ -1,9 +1,3 @@
-
-
-
-
-
-
 <!doctype html>
 <html lang="en">
 {% load static %}
@@ -19,45 +13,43 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
   </head>
-
   <body>
-
     <main role="main">
-
       <section class="jumbotron text-center">
-        <div class="container">
+        <div class="container py-3">
           <h1 class="jumbotron-heading">Evans Ansong</h1>
-          <marquee behavior="scroll" direction="middle" scrollamount="10" width='500'><p class="lead text-muted">I love technology and programming  in particular!</p></marquee>
+       <p class="lead text-dark">I'm a motivated full-stack engineer who has experience building and scaling web applications and services.<br/> I'm also like  open-source contributions, working in high impact environments, and helping growing development teams build great products and provide useful services.</p>
           <p>
             <span >
               <a href="mailto:evans@gmail.com" ><i class="far fa-envelope"></i></a>
             </span>
            <span>
-            <a href="mailto:evans@gmail.com"><i class="fab fa-github"></i></a>
+            <a href="mailto:evans@gmail.com"><i style="color: black; font-size: 2.5em;" class="fab fa-github"></i></a>
            </span>
-           <span ">
+           <span >
             <a href="mailto:evans@gmail.com"><i class="fab fa-linkedin"></i></a>
            </span>
-          <span">
-            <a href="https://codepen.io/br646" target="_blank"><i class="fab fa-codepen"></i></a>
+          <span>
+            <a href="mailto:evans@gmail.com"><i style="color: black; font-size: 2.5em;" class="fab fa-codepen"></i></a>
           </span>
           </p>
-          <img src="{% static 'mypic.jpeg' %}" height="300" />
+          <img  src="{% static 'mypic.jpeg' %}" height="300" />
         </div>
       </section>
-  <button type="button" class="btn btn-info btn-md py-3">Resume</button>
-  
-      <div class="album py-3  bg-light">
-   <h1 class="text-center projects mb-5 text-muted" style="text-decoration: overline;text-decoration-color:aquamarine" >My Projects</h1>
+  <button type="button" class="btn btn-info btn-md py-3" style="outline: none;"><h3>Resume</h3></button>
+  <div class="album py-3  bg-light">
+   <h1 class="text-center projects mb-5 text-muted" style="text-decoration: overline;text-decoration-color:#0DCAF0" >Projects</h1>
         <div class="container">
           <div class="row">
             {% for job in jobs.all %}
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
                 <a href="{%url 'detail' job.id %}">
-                <img class="card-img-top" src="{{ job.image.url }}">
+                <img class="card-img-top img-fluid" src="{{ job.image.url }}" width="400" height="200" >
                 <div class="card-body">
                   <p class="card-text text-decoration-none">{{ job.summary }}</p>
                 </div>
@@ -68,7 +60,6 @@
           </div>
         </div>
       </div>
-
       <section class="stacks">
         <div class="album py-3  bg-dark p-10" >
           <h1 class="text-center mb-5 text-white" >Web Technology Stacks</h1>
@@ -98,12 +89,10 @@
              </div>
       </section>
     </main>
-
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="{% static 'js/bootstrap.js' %}" ></script>
-    <script src="{% static 'jquery-3.3.1.min.js' %}" ></script>
+    <script src="{% static 'jquery-3.6.0.min.js' %}" ></script>
   </body>
 </html>

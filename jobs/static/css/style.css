@@ -1,3 +1,6 @@
+body{
+    background-color: #cde2ec;
+}
 
 a{
     text-decoration: none !important;
@@ -9,20 +12,22 @@ a .fa-envelope{
     font-size: 2.5em;
 }
 
-a .fa-github{
-    color: #171515 ;
-    font-size: 2.5em;
-}
+
 a .fa-linkedin{
  color: #0e76a8;
  font-size: 2.5em;
 }
 
+
 a .fa-codepen{
     color: #171515 ;
     font-size: 2.5em;
-};
+}
 
+a .fa-github {
+    color: #171515 ;
+    font-size: 2.5em;
+}
 
  html {
     scroll-behavior: smooth;
