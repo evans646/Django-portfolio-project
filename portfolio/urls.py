@@ -22,8 +22,8 @@ from django.conf.urls import include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', jobs.views.index,include('portfolio.urls'), name='index'),
-    path('jobs/<int:job_id>', jobs.views.detail,include('portfolio.urls'),name='detail'),
+    path(r'^', jobs.views.index,include('portfolio.urls')),
+    path(r'^jobs/<int:job_id>', jobs.views.detail,include('portfolio.urls')),
 ]
 
 
