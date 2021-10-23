@@ -21,14 +21,13 @@ from django.conf.urls.static import static
 from django.conf.urls import include
 
 urlpatterns = [
-    path('admin/', admin.site.urls,include('portfolio.urls')),
-    path('', jobs.views.index, name='index'),
-    path('jobs/<int:job_id>', jobs.views.detail,name='detail'),
+    path('admin/', admin.site.urls,),
+    path('', jobs.views.index,include('portfolio.urls')),
+    path('jobs/<int:job_id>', jobs.views.detail,include('portfolio.urls')),
 ]
 
 
 urlpatterns+=static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
 urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
 # urlpatterns+=include('portfolio.urls')
-
 
