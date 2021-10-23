@@ -23,9 +23,12 @@ from django.conf.urls import include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', jobs.views.index,name='index'),
-    path('https://portfolio656.herokuapp.com/jobs/<int:job_id>', jobs.views.detail, name='detail'),
-    path('api/', include('portfolio.urls'))
+    path('jobs/<int:job_id>', jobs.views.detail, name='detail'),
+    path('', include('portfolio.urls'))
 ]
+
 
 urlpatterns+=static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
 urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+
+
