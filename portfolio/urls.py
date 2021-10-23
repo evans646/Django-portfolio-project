@@ -23,7 +23,7 @@ from django.conf.urls import include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', jobs.views.index,name='index'),
-    path('https://portfolio656.herokuapp.com/jobs/<int:job_id>', jobs.views.detail,include('portfolio.urls'), name='detail'),
+    path('jobs/<int:job_id>', jobs.views.detail,include('portfolio.urls'), name='detail'),
 ]
 
 
