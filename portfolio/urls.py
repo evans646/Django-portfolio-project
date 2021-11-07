@@ -23,13 +23,13 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls,),
     path('', jobs.views.index, name='index'),
-    path('projects/<int:job_id>',jobs.views.detail,name='detail'),
+    path('jobs/<int:job_id>',jobs.views.detail,name='detail'),
+    # path('https://portfolio656.herokuapp.com/',include('portfolio.urls')),
 ]
 
-
-# urlpatterns+=static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
 if settings.DEBUG:
-          urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
-
+      urlpatterns+=static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
+      urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+# urlpatterns+=include('portfolio.urls')
 
 
