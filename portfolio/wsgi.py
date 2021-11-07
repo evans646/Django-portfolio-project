@@ -1,5 +1,5 @@
 import os
-from whitenoise import whitenoise
+from whitenoise import WhiteNoise
 
 from django.core.wsgi import get_wsgi_application
 
