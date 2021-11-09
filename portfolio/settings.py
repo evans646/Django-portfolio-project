@@ -141,13 +141,6 @@ USE_TZ = True
 # MEDIA_ROOT= BASE_DIR
 
 STATIC_URL = '/static/'
-# STATIC_ROOT = os.path.join(BASE_DIR, "static")
-# MEDIAFILES_DIRS = (MEDIA_ROOT)
-# MEDIA_URL = '/media/'
-# MEDIA_ROOT = os.path.join(BASE_DIR, "media")
-
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
-
 
 cloudinary.config( 
   cloud_name = "evans646", 
