@@ -14,6 +14,7 @@
 
   <body>
 
+  
     <main role="main">
       <section class="jumbotron text-center">
         <div class="container">
@@ -21,7 +22,6 @@
           <p class="lead text-muted">{{job.summary}}</p>
           <img src="{{ job.image.url }}" height="400" width="400"/>
           <p class="lead text-muted py-5">{{job.description}}</p>
-         
           <p>
             <a href="{%url 'index' %}" class="btn btn-primary my-2">Back to home</a>
             <a  href='{{ job.url}}' target="_blank" class="btn btn-info my-2">View live</a>
