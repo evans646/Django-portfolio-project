@@ -30,6 +30,10 @@ a .fa-codepen {
 .card:hover {
     box-shadow: #20a80e;
 }
+.user-photo{
+    border-radius: 44% 56% 100% 0% / 100% 81% 19% 0% ;
+    padding: 10px
+}
 
 a .fa-github {
     color: #171515;
