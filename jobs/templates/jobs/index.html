@@ -5,19 +5,19 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
+    <link rel="icon" href="https://img.icons8.com/material-outlined/24/000000/globe--v1.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Main css -->
     <link rel="stylesheet" type="text/css"  href="{% static 'css/style.css' %}">
-    <title>Portfolio</title>
+    <title>Portfolio project</title>
   </head>
   <body>
     <header>
       
-        <div class="navbar navbar-dark box-shadow" style="background-color:rgb(30, 155, 86)">
+        <div class="navbar navbar-dark box-shadow" style="background-color:#0f4173">
           <div class="container d-flex justify-content-between">
-            <a href="#" class="navbar-brand d-flex align-items-center">
+            <a href="/" class="navbar-brand d-flex align-items-center">
               <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-portfolio-resume-flaticons-flat-flat-icons.png"  width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"/>
               <strong>Portfolio</strong>
             </a>
@@ -26,18 +26,21 @@
       </header>
   
       <main role="main">
-        <section class="jumbotron text-center container-fluid text-light" 
-        style="background-image: url(https://images.unsplash.com/photo-1521185496955-15097b20c5fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80);">
+        <section class="jumbotron text-center container-fluid" 
+        style="background-image:
+          url(https://images.unsplash.com/photo-1617609277590-ec2d145ca13b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);border-radius: 0px;background-position: center;">
           <div class="container">
             <img width="270" height="270"
             src="https://images.unsplash.com/photo-1527314392553-2c7bded21b23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80l"
              alt="User" style="border-radius: 50%;">
-             <h1 class="jumbotron-heading">Evans Ansong</h1>
-         
+             <h1 class="jumbotron-heading text-light">Evans Ansong</h1>
+             <hr class="star-primary"> 
             <h5 class="text-light py-3">Software Engineer</h5> 
           </div>
         </section>
-        <a  href="{% static 'pdf/resume.pdf' %}"> <button type="button" class="btn btn-info btn-md py-3" style="outline: none;"><b>Resume</b></button></a>
+        <a  href="{% static 'pdf/resume.pdf' %}"> <button type="button" class="btn btn-primary btn-md py-3" style="outline: none;"><b> Resume
+          <img style="width: 3em;" src="data:image/png;base64,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">
+        </b></button></a>
         <section>
           <div class="row">
             <div class="col-lg-12 text-center ">
@@ -54,20 +57,20 @@
             <div id="cards_landscape_wrap-2">
               <div class="container">
                   <div class="row">
-                    {% for job in jobs.all %}
+                    {% for project in projects.all %}
                     <div class="col-sm-4 py-2">
                       <div class="card">
-                        <a href="{%url 'detail' job.id %}">
+                        <a href="{%url 'detail' project.id %}">
                         <div class="image">
-                          <img src="{{ job.image.url }}" height="200"/>
+                          <img src="{{ project.image.url }}" height="200"/>
                         </div>
                         <div class="card-inner">
                           <div class="header">
-                            <h3>{{ job.summary}}</h3>
+                            <h3>{{ project.summary}}</h3>
                        <hr/>
                         </div>
                         <div class="content">
-                          <p>{{job.description}}</p>
+                          <p>{{project.description}}</p>
                         </div>
                           </div>
                       </div>
@@ -103,7 +106,9 @@
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
               </div>
             </span>
-            <button type="submit" class="btn btn-primary" style="margin-top: 10px;width:100px;padding: 10px;">Submit</button>
+            <button type="submit" class="btn btn-primary" style="margin-top: 10px;width:100px;padding: 10px;"> Submit 
+              <img width="20" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAABn0lEQVRYhe2WLU/DUBSGbzEUSUgL/ALmEGiKAEWCpI5JEghoLAJ+AHoocEgmsZghaQiGEBLkQgC5QXgQO0tvun53t4Rkr2lzPu773nvuOa1SE0xQAwAL8IDNuomXgGPgiQG8OkhngV3gFvghxAswZYrUBnygDfQ10g/gTd5PTBCvAGdAVyP9Bm6AJjAHvIu9MS7SaF2HeACOgHkt1hdfpyppUl1f5QSWE/LaEndQhnQa2AKugF6krhfABmCl5DtyH770U8kiHfZrS4iG6MtufMCOyXOBvYjtUHLbecmbDFpFR0cWclLyXCCQ+H3Nfic2P68AfaEesFowJwBcsTe0co2cWNqCDnAvyY/AYoHYBc13KvZWbvIiIjLILeBZfOVGb5qINHLxr4mv2uiNE5FFLnnn4q8+emMu2ciFi8TbhO07ttGr7zpx5xJbePRm1siyrK5Sal0pFejmhPAdeV7mFZAbWd1BmdE7ThGEo/faCHmWCMLRu21UQIIIT94/gRnjAkRE9NsBZUZvRRHRFjX/15siwtxfbw4RLtD8E/J/j19UDHPD88Jh+wAAAABJRU5ErkJggg==">
+            </button>
           </form>
       </div>
   </section>
@@ -182,7 +187,6 @@
           </div>
       </div>
   </footer>
-  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

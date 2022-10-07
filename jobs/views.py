@@ -4,9 +4,9 @@ from .models import Job
 
 # Create your views here.
 def index(request):
-    jobs = Job.objects
-    return render(request, 'jobs/index.html',{'jobs':jobs})
+    projects = Job.objects
+    return render(request, 'jobs/index.html',{'projects':projects})
 
-def detail(request, job_id):
-    job_detail = get_object_or_404(Job, pk=job_id) #every model in the db has a pk(primary key)
-    return render(request, 'jobs/detail.html', {'job':job_detail})
+def detail(request, project_id):
+    project_detail = get_object_or_404(Job, pk=project_id) #every model in the db has a pk(primary key)
+    return render(request, 'jobs/detail.html', {'project':project_detail})

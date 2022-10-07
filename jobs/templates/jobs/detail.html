@@ -6,31 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
-
+    <link rel="icon" href="https://img.icons8.com/material-outlined/24/000000/globe--v1.png">
+    <link rel="stylesheet" type="text/css"  href="{% static 'css/style.css' %}">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Evans Ansong</title>
-
+    
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
   </head>
-
   <body>
 
-    <main style="text-align:center;padding: 10px;">
+    <main style="text-align:center;padding: 6px;">
       <section class="text-center">
         <div class="container">
           <h1 class="jumbotron-heading pt-3">Project details</h1>
-          <p class="lead text-muted">{{job.summary}}</p>
-          <img src="{{ job.image.url }}" height="400" width="400"/>
-          <p class="lead text-muted py-5">{{job.description}}</p>
+          <hr class="star-primary"> 
+          <p class="lead text-muted">{{project.summary}}</p>
+          <img src="{{ project.image.url }}" height="400" width="400" alt="project image"/>
+          <p class="lead text-muted py-5">{{project.description}}</p>
           <p>
             <a href="{%url 'index' %}" class="btn btn-primary my-2">Back to home</a>
-        
-            <a  href='{{ job.url}}' target="_blank">
-              <button  type="button" class="btn btn-success">View live site   </button>
+            <a  href='{{ project.url}}' target="_blank">
+              <button  type="button" class="btn btn-success">View live site</button>
             </a>
-         
           </p>
         </div>
       </section>
