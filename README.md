@@ -8,6 +8,7 @@ This is a simple Portfolio website. I  used Technologies such as
     
 </ul>
 And Cloudinary to store images 
+
 <p>
  This project is merely to test my PostgreSQL and Django skills
 </p>
