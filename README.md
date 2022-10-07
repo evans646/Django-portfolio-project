@@ -4,4 +4,4 @@ This is a simple Portfolio website, Used python3, Django, Bootstrap5, PostgresSQ
  This project is merely to test my PostgreSQL skills
 </p>
 
-However this is not my main portfolio website.
+Hence this is not my main portfolio website.
