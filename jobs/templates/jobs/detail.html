@@ -7,6 +7,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Evans Ansong</title>
 
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
@@ -14,9 +17,8 @@
 
   <body>
 
-  
-    <main role="main">
-      <section class="jumbotron text-center">
+    <main style="text-align:center;padding: 10px;">
+      <section class="text-center">
         <div class="container">
           <h1 class="jumbotron-heading pt-3">Project details</h1>
           <p class="lead text-muted">{{job.summary}}</p>
@@ -24,15 +26,19 @@
           <p class="lead text-muted py-5">{{job.description}}</p>
           <p>
             <a href="{%url 'index' %}" class="btn btn-primary my-2">Back to home</a>
-            <a  href='{{ job.url}}' target="_blank" class="btn btn-info my-2">View live</a>
+        
+            <a  href='{{ job.url}}' target="_blank">
+              <button  type="button" class="btn btn-success">View live site   </button>
+            </a>
+         
           </p>
         </div>
       </section>
     </main>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="{% static 'js/bootstrap.js' %}" ></script>
-    <script src="{% static 'jquery-3.3.1.min.js' %}" ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script><script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
