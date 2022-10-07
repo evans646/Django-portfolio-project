@@ -1,5 +1,14 @@
 # Portfolio
-This is a simple Portfolio website, Used python3, Django, Bootstrap5, PostgresSQL Database and Cloudinary.
+This is a simple Portfolio website. I  used Technologies usch as 
+<ul>
+    <li>Python3</li>
+    <li>Django</li>
+    <li>Bootstrap4</li>
+    <li>PostgreSQL Database</li>
+    
+</ul>
+
+And Cloudinary to store images 
 <p>
  This project is merely to test my PostgreSQL skills
 </p>
