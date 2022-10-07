@@ -1,5 +1,5 @@
 # Portfolio
-This is a simple Portfolio website. I  used Technologies usch as 
+This is a simple Portfolio website. I  used Technologies such as 
 <ul>
     <li>Python3</li>
     <li>Django</li>
