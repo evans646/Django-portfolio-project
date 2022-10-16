@@ -14,6 +14,6 @@ def index(request):
 
 def detail(request, project_id):
     project_detail = get_object_or_404(Project, pk=project_id) #every model in the db has a pk(primary key)
-    return render(request, 'project/detail.html', {'project':project_detail})
+    return render(request, 'projects/detail.html', {'project':project_detail})
 
 
