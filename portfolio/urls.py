@@ -15,15 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-import jobs.views
+import projects.views
 from django.conf import settings
 from django.conf.urls.static import static
 
 
 urlpatterns = [
     path('admin/', admin.site.urls,),
-    path('', jobs.views.index, name='index'),
-    path('project/<int:project_id>',jobs.views.detail,name='detail'),
+    path('', projects.views.index, name='index'),
+    path('project/<int:project_id>',projects.views.detail,name='detail'),
 ]
 
 
