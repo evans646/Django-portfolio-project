@@ -78,7 +78,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'portfoliodb',
         'USER':'postgres',
-        'PASSWORD':'1234',
+        'PASSWORD': os.environ.get('DB_PASSWORD'),
         'HOST':'localhost',
         'PORT':'5432',
     }
@@ -133,8 +133,8 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 cloudinary.config( 
   cloud_name = "evans646", 
-  api_key = "761987322274978", 
-  api_secret = "2SDtDwAypatVhoM5Bm__LVhq220",
+  api_key = os.environ.get('CLOUDINARY_API_KEY'), 
+  api_secret =os.environ.get('CLOUDINARY_SECRET'),
   secure = True
 )
 # Default primary key field type
